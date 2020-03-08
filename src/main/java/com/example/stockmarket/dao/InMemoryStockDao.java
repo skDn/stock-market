@@ -36,7 +36,7 @@ public class InMemoryStockDao implements StockDao {
     @Override
     public void checkIfStockValid(String stock) {
         if (!db.containsKey(stock)) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "The provided stock is not valud");
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "The provided stock is not valid");
         }
     }
 
